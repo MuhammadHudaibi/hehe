@@ -16,10 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
         heroText.style.transform = 'translateY(0)';
     }, 500);
 
+    // Background music control
     const backgroundMusic = document.getElementById('background-music');
-    
-    backgroundMusic.volume = 0.5;  // Set volume as required
-    backgroundMusic.play().catch(error => {
-        console.error('Music playback failed:', error);
+    const startMusicButton = document.getElementById('start-music');
+    const overlay = document.getElementById('overlay');
+
+    startMusicButton.addEventListener('click', () => {
+        backgroundMusic.play().catch(error => {
+            console.error('Music playback failed:', error);
+        });
+        overlay.style.display = 'none';
     });
 });
