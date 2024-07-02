@@ -178,3 +178,20 @@ footer .footer-content {
     max-width: 1000px;
     margin: 0 auto;
 }
+
+#music-control {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ffccff; /* Light pink for the button */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#music-control:hover {
+    background: #ff99cc; /* Darker pink for hover */
+}

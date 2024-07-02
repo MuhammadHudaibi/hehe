@@ -15,4 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
         heroText.style.opacity = 1;
         heroText.style.transform = 'translateY(0)';
     }, 500);
+
+    const backgroundMusic = document.getElementById('background-music');
+    
+    backgroundMusic.volume = 0.5;  // Set volume as required
+    backgroundMusic.play().catch(error => {
+        console.error('Music playback failed:', error);
+    });
 });
